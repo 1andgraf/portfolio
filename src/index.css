@@ -29,6 +29,7 @@ html {
   margin-top: 4px;
   width: 33px;
   padding: 0;
+  border-radius: 50%;
 }
 
 .header ul {
@@ -69,15 +70,62 @@ html {
   height: 120vh;
   filter: contrast(300);
 }
-.landingpagecontent {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: white;
-  text-align: center;
-  z-index: 1;
+
+.mainpagecontent {
+  position: relative;
+  height: 91vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+
+.code {
+  width: 650px;
+  height: 350px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 30px;
+}
+
+.code p {
+  color: white;
+  font-size: 13px;
+  margin: 15px;
+  margin-left: 50px;
+  line-height: 1.4;
+}
+
+.code hr {
+  border: 0;
+  height: 1px;
+  background: #404040;
+  margin: 10px 0;
+  margin-bottom: 20px;
+}
+
+.code pre {
+  margin-left: 50px;
+  margin-top: 40px;
+}
+
+.code code {
+  color: #ffffff;
+  margin: 0px;
+}
+
+.keyword {
+  color: #3a98d7;
+}
+.tag {
+  color: #d73a49;
+}
+
+.landingpagecontent {
+  color: white;
+  text-align: left;
+  z-index: 1;
+  margin-right: 8%;
+}
+
 .landingpagecontent h1 {
   font-size: 80px;
   margin: 0;
@@ -86,13 +134,14 @@ html {
 }
 .landingpagecontent p {
   font-size: 20px;
-  margin: 0;
+  margin-bottom: 15px;
 }
 .landingpagecontent a {
   position: relative;
   overflow: hidden;
   display: inline-block;
-  margin: 10px;
+  margin-right: 10px;
+  margin-top: 20px;
   padding: 15px 20px;
   border: 2px solid white;
   border-radius: 50px;
@@ -264,7 +313,7 @@ html {
 }
 
 .ThirdPage {
-  height: 450px;
+  height: 650px;
   width: 100%;
   padding-top: 30px;
   justify-content: center;
@@ -295,6 +344,10 @@ html {
   justify-content: center;
   align-items: center;
   margin-top: 80px;
+}
+
+#list2 {
+  margin-top: 40px;
 }
 
 .ThirdPage ul li {
@@ -387,7 +440,7 @@ html {
 
 .empty-item {
   min-width: 485px;
-  scroll-snap-align: start; /* Adjust the width to the desired space before the first item */
+  scroll-snap-align: start;
 }
 
 .item {
@@ -420,15 +473,15 @@ a {
 }
 
 .item img {
-  width: 360px;
-  height: 110px;
+  width: 390px;
+  height: 140px;
   border-radius: 15px;
   margin-top: 10px;
   margin-left: 50px;
   background-color: rgb(0, 0, 0);
   border: 2px solid rgb(74, 74, 74);
   object-fit: cover;
-  padding: 20px;
+  padding: 0px;
 }
 
 .FifthPage {
@@ -558,4 +611,379 @@ body::-webkit-scrollbar {
 
 body::-webkit-scrollbar {
   display: none; /* Chrome, Safari */
+}
+
+@media (max-width: 1500px) {
+  .header ul a {
+    margin: 0 12px;
+  }
+
+  .mainpagecontent h1,
+  p {
+    text-align: center;
+  }
+
+  .mainpagecontent {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+  }
+
+  .landingpagecontent {
+    align-items: center;
+    justify-content: center;
+  }
+
+  .landingpagecontent a {
+    margin-left: 10px;
+  }
+
+  .aboutwindows {
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    margin-top: 90px;
+    right: 0px;
+  }
+  .SecondPage {
+    height: 1800px;
+    width: 100%;
+    background-color: rgb(19, 19, 19);
+    display: block;
+    text-align: center;
+    align-items: center;
+  }
+  .SecondPage .secondpagecontent {
+    margin: 0;
+    padding-left: 0;
+    padding-top: 100px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
+  .SecondPage .secondpagecontent p {
+    font-size: 20px;
+    margin-left: 10%;
+    width: 80%;
+    margin-top: 40px;
+    color: rgb(165, 165, 165);
+    font-weight: 550;
+  }
+
+  .aboutwindows h2 {
+    font-size: 20px;
+    color: rgb(233, 233, 233);
+    margin: 0;
+    padding: 30px;
+    padding-bottom: 20px;
+  }
+
+  .aboutwindows img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  .aboutwindow p {
+    font-size: 15px;
+    color: rgb(212, 212, 212);
+    margin: 30px;
+    margin-top: 0px;
+    width: 200px;
+  }
+  .smallwindows p {
+    font-size: 15px;
+    color: rgb(212, 212, 212);
+    margin: 30px;
+    margin-top: 0px;
+    width: 140px;
+  }
+
+  .smallwindows {
+    display: block;
+  }
+
+  .aboutwindow {
+    width: 80%;
+    margin-left: 10%;
+    height: 460px;
+    background-color: rgb(0, 0, 0);
+    border-radius: 30px;
+    display: block;
+    margin-bottom: 20px;
+  }
+
+  .aboutwindow p {
+    width: 80%;
+    margin-left: 10%;
+  }
+  .aboutwindow1 p {
+    width: 80%;
+    margin-left: 10%;
+  }
+
+  .aboutwindow1 {
+    width: 80%;
+    margin-left: 10%;
+    height: 360px;
+    background-color: rgb(0, 0, 0);
+    border-radius: 30px;
+    display: block;
+    margin-bottom: 20px;
+  }
+
+  .aboutwindow .img {
+    width: 80%;
+    height: 240px;
+    border-radius: 15px;
+    margin-top: 35px;
+    margin-left: 40px;
+    overflow: hidden;
+  }
+
+  .aboutwindow1 .img {
+    width: 80%;
+    height: 160px;
+    border-radius: 15px;
+    margin-top: 35px;
+    margin-left: 40px;
+    overflow: hidden;
+  }
+
+  .aboutwindow1 .img3 {
+    width: 80%;
+    height: 175px;
+    border-radius: 15px;
+    margin-top: 35px;
+    margin-left: 40px;
+    overflow: hidden;
+  }
+
+  .ThirdPage {
+    height: 700px;
+    width: 100%;
+    padding-top: 30px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .ThirdPage .thirdpagecontent h1 {
+    font-size: 40px;
+    margin-top: 40px;
+    margin-bottom: 0px;
+    color: rgb(233, 233, 233);
+  }
+
+  .ThirdPage .thirdpagecontent p {
+    width: 80%;
+    margin-left: 10%;
+  }
+
+  .ThirdPage ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    width: 80%;
+    margin-left: 10%;
+    padding: 0;
+    height: 200px;
+    flex-wrap: wrap;
+    overflow: hidden;
+  }
+
+  .ThirdPage ul li {
+    width: 50px;
+    height: 50px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin: 0 10px;
+    text-decoration: none;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    cursor: pointer;
+  }
+
+  .ThirdPage ul li:hover {
+    transform: scale(1.1);
+  }
+
+  .techicon {
+    border-radius: 10px;
+    width: 50px;
+    height: 50px;
+  }
+
+  .FifthPage {
+    height: 1020px;
+    width: 85%;
+    margin-top: 0px;
+    margin-bottom: 100px;
+    margin-left: 7.5%;
+    background-color: rgb(18, 18, 18);
+    display: block;
+    text-decoration: none;
+    border-radius: 30px;
+    text-align: center;
+  }
+  .FifthPage .fifthpagecontent {
+    margin: 0;
+    padding-left: 0px;
+    padding-top: 30px;
+  }
+  .FifthPage .fifthpagecontent h1 {
+    font-size: 60px;
+    color: rgb(233, 233, 233);
+  }
+  .FifthPage .fifthpagecontent p {
+    font-size: 20px;
+    margin-top: -10px;
+    color: rgb(165, 165, 165);
+    font-weight: 550;
+  }
+
+  .FifthPage ul {
+    list-style: none;
+    margin-top: 40px;
+    margin-left: -40px;
+  }
+  .FifthPage ul li a {
+    width: 80%;
+    margin-left: 10%;
+    height: 80px;
+    align-items: center;
+    display: flex;
+    margin-bottom: 15px;
+    text-decoration: none;
+    color: rgb(176, 176, 176);
+    font-size: 15px;
+    font-weight: 550;
+    background-color: rgb(0, 0, 0);
+    border-radius: 15px;
+    transition: all 0.3s ease;
+  }
+
+  .FifthPage ul li a svg {
+    margin-left: 40px;
+    color: rgb(211, 211, 211);
+    scale: 2;
+    margin-right: 35px;
+  }
+
+  .FifthPage .big {
+    width: 80%;
+    margin-left: 10%;
+    height: 365px;
+    border-radius: 15px;
+    margin-top: 10px;
+    background-color: rgb(0, 0, 0);
+    display: block;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    text-decoration: none;
+    text-align: center;
+  }
+
+  .FifthPage .big:hover {
+    scale: 1.01;
+  }
+
+  .FifthPage ul li a:hover {
+    scale: 1.03;
+  }
+
+  .FifthPage .big svg {
+    margin-left: 0;
+    color: rgb(211, 211, 211);
+    scale: 5;
+    margin-top: 50px;
+  }
+
+  .FifthPage .big h1 {
+    font-size: 30px;
+    color: rgb(200, 200, 200);
+    text-decoration: none;
+    margin-top: 0px;
+    padding-top: 30px;
+  }
+
+  .FifthPage .ghcontent {
+    text-decoration: none;
+  }
+
+  .FifthPage a {
+    text-decoration: none;
+  }
+
+  .FifthPage .ghcontent p {
+    width: 80%;
+    font-size: 20px;
+    margin-top: -10px;
+    margin-left: 10%;
+    text-decoration: none;
+    color: rgb(165, 165, 165);
+    font-weight: 550;
+  }
+
+  .empty-item {
+    min-width: 0;
+  }
+  .scroll-container {
+    scroll-snap-type: none; /* Enable horizontal snap scrolling */
+    -webkit-overflow-scrolling: touch; /* Smooth scrolling on touch devices */
+  }
+
+  .code {
+    display: none;
+  }
+
+  .item {
+    min-width: 80%;
+    border: 2px solid rgb(58, 58, 58);
+  }
+  .item:hover {
+    scale: 1;
+  }
+  .item img {
+    width: 60%;
+  }
+  .lens-background {
+    position: absolute;
+    width: 80%;
+    margin-left: 10%;
+    margin-top: -30px;
+    height: 500px;
+    background: radial-gradient(
+      ellipse at center,
+      rgba(255, 255, 255, 0.174),
+      rgba(255, 255, 255, 0) 80%
+    );
+    border-radius: 0;
+    z-index: 0;
+  }
+  .FourthPage {
+    margin-top: 0;
+  }
+  .FourthPage .fourthpagecontent h1 {
+    font-size: 40px;
+    margin-top: 100px;
+    margin-bottom: 0px;
+    color: rgb(233, 233, 233);
+  }
+  .landingpagecontent h1 {
+    font-size: 40px;
+  }
+
+  .FifthPage .fifthpagecontent h1 {
+    font-size: 40px;
+    color: rgb(233, 233, 233);
+  }
+
+  .SecondPage .secondpagecontent h1 {
+    font-size: 60px;
+    color: rgb(233, 233, 233);
+  }
 }

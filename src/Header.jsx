@@ -1,4 +1,5 @@
 import React from "react";
+import Logo from "/Users/filipplandgraf/portfolio-website/content/logo.png";
 
 function Header() {
   return (
@@ -7,7 +8,7 @@ function Header() {
         <ul>
           <a href="#bgVideo">
             <li>
-              <img src="./content/logo.png" alt="" />
+              <img src={Logo} alt="" />
             </li>
           </a>
           <a href="#SecondPage">

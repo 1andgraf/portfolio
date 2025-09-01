@@ -4,7 +4,7 @@ function FifthPage() {
   return (
     <div className="FifthPage" id="Contact">
       <div className="fifthpagecontent">
-        <h1>Contact.</h1>
+        <h1>Contact</h1>
         <p>Let's work together.</p>
         <ul>
           <li>
@@ -70,7 +70,7 @@ function FifthPage() {
           </li>
         </ul>
       </div>
-      <a target="_blank" className="big" href="https://github.com/Derdart">
+      <a target="_blank" className="big" href="https://github.com/1andgraf">
         <div className="ghcontent">
           <h1>GitHub</h1>
           <p>
